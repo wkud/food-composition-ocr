@@ -83,6 +83,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'eadditives'
 ]
 
 MIDDLEWARE = [
@@ -154,3 +155,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+#########################################
+    ##  IMPORT LOCAL SETTINGS ##
+#########################################
+
+try:
+    from .local_settings import * 
+except ImportError: 
+    pass 
