@@ -1,12 +1,12 @@
 from django.core.management.base import BaseCommand
 from django.utils import timezone
-from eadditives.models import Eadditives
-import requests
+from ...models import Eadditives
 import json
+
 
 class Command(BaseCommand):
 
-    help="Populate database with initial E-additives data"
+    help = "Populate database with initial E-additives data"
 
     def handle(self, *args, **kwargs):
 
@@ -20,4 +20,3 @@ class Command(BaseCommand):
                 e.save()
 
                 print(e)
-
