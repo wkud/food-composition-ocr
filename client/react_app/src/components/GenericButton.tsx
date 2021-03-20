@@ -1,13 +1,13 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 interface Props {
-  onClick: React.MouseEventHandler<HTMLElement>,
-  iconClass: string,
-  text: string,
+  onClick: React.MouseEventHandler<HTMLElement>;
+  iconClass: string;
+  text: string;
 }
 
-const GenericButton = ({onClick, iconClass, text}: Props) => {
+const GenericButton = ({ onClick, iconClass, text }: Props) => {
   return (
     <Button variant='primary' className='button-size p-2' onClick={onClick}>
       <i className={iconClass} /> {text}
