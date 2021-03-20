@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import GenericButton from './GenericButton';
 
 interface Props {}
 
@@ -7,9 +7,7 @@ const UploadButton = (props: Props) => {
   const onClick = () => {};
 
   return (
-    <Button variant='primary' className='button-size' onClick={onClick}>
-      <i className='fas fa-upload' /> Upload an image
-    </Button>
+    <GenericButton text='Upload an image' iconClass='fas fa-upload' onClick={onClick}/>
   );
 };
 
