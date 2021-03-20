@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Eadditives
+from .serializers import EadditivesSerializer
 
-# Create your views here.
+
+class EadditivesViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Eadditives.objects.all()
+    serializer_class = EadditivesSerializer
