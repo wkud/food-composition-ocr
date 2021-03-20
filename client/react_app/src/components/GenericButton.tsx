@@ -10,7 +10,7 @@ interface Props {
 const GenericButton = ({onClick, iconClass, text}: Props) => {
   return (
     <Button variant='primary' className='button-size' onClick={onClick}>
-      <i className='fas fa-upload' /> {text}
+      <i className={iconClass} /> {text}
     </Button>
   );
 };
