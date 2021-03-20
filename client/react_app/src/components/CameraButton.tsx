@@ -8,7 +8,7 @@ const CameraButton = (props: Props) => {
 
   return (
     <Button variant='primary' className='button-size' onClick={onClick}>
-      Take a photo
+      <i className='fas fa-camera' /> Take a photo
     </Button>
   );
 };

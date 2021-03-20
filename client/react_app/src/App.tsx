@@ -1,6 +1,6 @@
 import Decription from './components/Decription';
-import UploadButton from './components/UploadButton';
 import CameraButton from './components/CameraButton';
+import UploadButton from './components/UploadButton';
 import './styles.css';
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
           <h3>Product Composition Recognizer</h3>
           <Decription className='lead description-size' />
         </div>
-        <UploadButton />
         <CameraButton />
+        <UploadButton />
         <div />
       </div>
     </div>

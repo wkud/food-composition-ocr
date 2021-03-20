@@ -8,7 +8,7 @@ const UploadButton = (props: Props) => {
 
   return (
     <Button variant='primary' className='button-size' onClick={onClick}>
-      Upload
+      <i className='fas fa-upload' /> Upload an image
     </Button>
   );
 };
